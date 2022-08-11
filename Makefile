@@ -14,9 +14,10 @@ linkedlist:
 	@echo "======================================="
 	@echo "|           LISTAS                    |"
 	@echo "======================================="
-	@echo -e "\nCompilando o exemplo de lista simplesmente. Programa linkedlist"
-	gcc LinkedList.h LinkedList.c LinkedListTeste.c -o linkedlist
+	@echo -e "\nCompilando o exemplo de lista simplesmente ligada. Programa linkedlist"
+	gcc log.h log.c LinkedList.h LinkedList.c LinkedListTeste.c -o linkedlist
 	chmod +x linkedlist
+
 
 clear:
 	@echo ""
@@ -25,4 +26,4 @@ clear:
 	@echo "======================================="
 
 	@echo -e "\nRemovendo os arquivos compilados"
-	rm -f pointers linkedlist
+	rm -f pointers linkedlist logs
