@@ -1,4 +1,4 @@
-all: clear pointers linkedlist
+all: clear pointers linkedlist doublylinkedlist
 
 pointers:
 	@echo ""
@@ -18,6 +18,15 @@ linkedlist:
 	gcc log.h log.c LinkedList.h LinkedList.c LinkedListTeste.c -o linkedlist
 	chmod +x linkedlist
 
+doublylinkedlist:
+	@echo ""
+	@echo "======================================="
+	@echo "|           LISTAS DUPLAS             |"
+	@echo "======================================="
+	@echo -e "\nCompilando o exemplo de lista duplamente ligada. Programa doublylinkedlist"
+	gcc log.h log.c DoublyLinkedList.h DoublyLinkedList.c DoublyLinkedListTeste.c -o doublylinkedlist
+	chmod +x doublylinkedlist
+
 
 clear:
 	@echo ""
@@ -26,4 +35,4 @@ clear:
 	@echo "======================================="
 
 	@echo -e "\nRemovendo os arquivos compilados"
-	rm -f pointers linkedlist logs
+	rm -f pointers linkedlist logs doublylinkedlist

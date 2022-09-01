@@ -1,6 +1,5 @@
 #ifndef DataStructure_LinkedList_h
 #define DataStructure_LinkedList_h
-
 #include <stdbool.h>
 
 typedef struct Node {
@@ -14,7 +13,6 @@ typedef struct LinkedList {
 }LinkedList;
 
 typedef bool (*compare)(void*,void*);
-
 void init(LinkedList *list);
 int enqueue(LinkedList *list, void *data);
 void* dequeue(LinkedList *list);
