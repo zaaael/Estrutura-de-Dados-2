@@ -1,4 +1,4 @@
-all: clear pointers linkedlist doublylinkedlist
+all: clear pointers linkedlist doublylinkedlist generalizedlinkedlist
 
 pointers:
 	@echo ""
@@ -27,6 +27,14 @@ doublylinkedlist:
 	gcc log.h log.c DoublyLinkedList.h DoublyLinkedList.c DoublyLinkedListTeste.c -o doublylinkedlist
 	chmod +x doublylinkedlist
 
+GeneralizedLinkedList:
+	@echo ""
+	@echo "======================================="
+	@echo "|           LISTA GENERALIZADA        |"
+	@echo "======================================="
+	@echo -e "\nCompilando o exemplo de lista generalizada. Programa generalizedlinkedlist"
+	gcc log.h log.c GeneralizedLinkedList.h GeneralizedLinkedList.c GeneralizedLinkedListTeste.c -o generalizedlinkedlist
+	chmod +x generalizedlinkedlist
 
 clear:
 	@echo ""
@@ -35,4 +43,4 @@ clear:
 	@echo "======================================="
 
 	@echo -e "\nRemovendo os arquivos compilados"
-	rm -f pointers linkedlist logs doublylinkedlist
+	rm -f pointers linkedlist logs doublylinkedlist generalizedlinkedlist
