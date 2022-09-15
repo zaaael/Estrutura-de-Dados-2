@@ -27,7 +27,7 @@ doublylinkedlist:
 	gcc log.h log.c DoublyLinkedList.h DoublyLinkedList.c DoublyLinkedListTeste.c -o doublylinkedlist
 	chmod +x doublylinkedlist
 
-GeneralizedLinkedList:
+generalizedlinkedlist:
 	@echo ""
 	@echo "======================================="
 	@echo "|           LISTA GENERALIZADA        |"
