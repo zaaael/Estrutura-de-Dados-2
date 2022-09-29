@@ -36,6 +36,24 @@ generalizedlinkedlist:
 	gcc log.h log.c GeneralizedLinkedList.h GeneralizedLinkedList.c GeneralizedLinkedListTeste.c -o generalizedlinkedlist
 	chmod +x generalizedlinkedlist
 
+stack:
+	@echo ""
+	@echo "======================================="
+	@echo "|           Pilha, Prova              |"
+	@echo "======================================="
+	@echo -e "\nCompilando o exemplo de Pilha. Programa stack"
+	gcc log.h log.c Stack.h Stack.c StackTeste.c -o stack
+	chmod +x stack
+
+hash:
+	@echo ""
+	@echo "======================================="
+	@echo "|           Tabela Hash               |"
+	@echo "======================================="
+	@echo -e "\nCompilando o exemplo de Hash. Programa hash"
+	gcc log.h log.c Hash.h Hash.c HashTeste.c -o hash
+	chmod +x hash
+
 clear:
 	@echo ""
 	@echo "======================================="
@@ -43,4 +61,4 @@ clear:
 	@echo "======================================="
 
 	@echo -e "\nRemovendo os arquivos compilados"
-	rm -f pointers linkedlist logs doublylinkedlist generalizedlinkedlist
+	rm -f pointers linkedlist logs doublylinkedlist generalizedlinkedlist stack
