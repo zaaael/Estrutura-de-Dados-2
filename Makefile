@@ -1,4 +1,4 @@
-all: clear pointers linkedlist doublylinkedlist generalizedlinkedlist
+all: clear pointers linkedlist doublylinkedlist generalizedlinkedlist hash
 
 pointers:
 	@echo ""
@@ -51,7 +51,7 @@ hash:
 	@echo "|           Tabela Hash               |"
 	@echo "======================================="
 	@echo -e "\nCompilando o exemplo de Hash. Programa hash"
-	gcc log.h log.c Hash.h Hash.c HashTeste.c -o hash
+	gcc log.h log.c Hash.h Hash.c HashTeste.c DoublyLinkedList.h DoublyLinkedList.c -o hash
 	chmod +x hash
 
 clear:
@@ -61,4 +61,4 @@ clear:
 	@echo "======================================="
 
 	@echo -e "\nRemovendo os arquivos compilados"
-	rm -f pointers linkedlist logs doublylinkedlist generalizedlinkedlist stack
+	rm -f pointers linkedlist logs doublylinkedlist generalizedlinkedlist stack hash

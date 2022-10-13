@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include "GeneralizedLinkedList.h"
 
 int main() {
@@ -49,7 +49,4 @@ int main() {
     printf("\nProfundidade: %d\n",depth(head(tail(tail(listaGeneralizada)))));
     
     return 0;
-}
-
-    return EXIT_SUCCESS;
 }
