@@ -1,4 +1,4 @@
-all: clear pointers linkedlist doublylinkedlist generalizedlinkedlist hash
+all: clear pointers linkedlist doublylinkedlist generalizedlinkedlist hash binarysearchtree
 
 pointers:
 	@echo ""
@@ -54,6 +54,15 @@ hash:
 	gcc log.h log.c Hash.h Hash.c HashTeste.c DoublyLinkedList.h DoublyLinkedList.c -o hash
 	chmod +x hash
 
+binarysearchtree:
+	@echo ""
+	@echo "======================================="
+	@echo "|           Árvore Binária            |"
+	@echo "======================================="
+	@echo -e "\nCompilando o exemplo de Árvore Binária. Programa binarysearchtree"
+	gcc log.h log.c BinarySearchTree.h BinarySearchTree.c BinarySearchTree.c -o binarysearchtree
+	chmod +x binarysearchtree
+
 clear:
 	@echo ""
 	@echo "======================================="
@@ -61,4 +70,4 @@ clear:
 	@echo "======================================="
 
 	@echo -e "\nRemovendo os arquivos compilados"
-	rm -f pointers linkedlist logs doublylinkedlist generalizedlinkedlist stack hash
+	rm -f pointers linkedlist logs doublylinkedlist generalizedlinkedlist stack hash binarysearchtree
