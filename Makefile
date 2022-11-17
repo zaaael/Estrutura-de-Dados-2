@@ -60,7 +60,7 @@ binarysearchtree:
 	@echo "|           Árvore Binária            |"
 	@echo "======================================="
 	@echo -e "\nCompilando o exemplo de Árvore Binária. Programa binarysearchtree"
-	gcc log.h log.c BinarySearchTree.h BinarySearchTree.c BinarySearchTree.c -o binarysearchtree
+	gcc log.h log.c BinarySearchTree.h BinarySearchTree.c BinarySearchTreeTeste.c -o binarysearchtree
 	chmod +x binarysearchtree
 
 clear:
